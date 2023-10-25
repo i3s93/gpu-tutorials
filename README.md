@@ -33,4 +33,7 @@ Currently, MSU's HPCC has a partition of Intel Xeon Phi CPUs with NVIDIA GPUs (T
 ```
 salloc -N 1 -c 48 --gres=gpu:1 --time=1:00:00 --constraint=amd20
 ```
-This command requests 1 node (all 48 CPU cores) and a single GPU for 1 hour. The last option informs the scheduler of the partition that you would like to use. 
+This command requests 1 node (all 48 CPU cores) and a single GPU for 1 hour. The last option informs the scheduler of the partition that you would like to use. Here are some additional links that you might find helpful:
+* [CuPy documentation page](https://docs.cupy.dev/en/stable/)
+* [ICER: Development Nodes](https://docs.icer.msu.edu/development_nodes/)
+* [ICER: Setting up and interactive job](https://docs.icer.msu.edu/Interactive_Job/)
