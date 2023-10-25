@@ -11,6 +11,14 @@ We compare the performance of several kernels written using tools from SciPy and
 
 __Note__: The CuPy API we leverage does not specify more advanced configurations for threads such as the number of threads per threadblock and streams. This is merely to demonstrate that it is possible to quickly take some existing CPU code and convert it to something that runs on a GPU. Other optimizations can be made, but this will require more delicate tuning and usage of more advanced capabilities that are closer to the CUDA API.
 
+## Running the codes
+
+After setting up your environment, you can begin running the scripts. Each script can be launched with a command of the following form:
+```
+python <filename.py> -N <integer> -r <integer>
+```
+where `filename.py` is the name of the python script (which can be CPU or GPU), `N` is the number of entries per mode/dimension (controls the problem size), and `r` is the number of repetitions to be performed while collecting timing data.
+
 ## Dependencies
 
 Here is a summary of the modules that are required to run the code and the version which I am using on the MSU HPCC:
